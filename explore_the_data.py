@@ -91,8 +91,8 @@ def lowest_corr(df_data):
     # print(pp.corrwith(df_data))
     print("corr stuff", "\n", df_data.corr()['quality'][:-1])  # Se the corr of quality with other columns. "[:-1]" excludes the same column
     print("corr stuff2", "\n", df_data.corr()['quality'])
-    print("fixed acidity: seem to be the lowes value")
-    df_data = df_data.drop(['fixed acidity'], axis=1)
+    print("pH: seem to be the lowes value")
+    df_data = df_data.drop(['pH'], axis=1)
     print("corr stuff3", "\n", df_data.corr()['quality'])
 
 
